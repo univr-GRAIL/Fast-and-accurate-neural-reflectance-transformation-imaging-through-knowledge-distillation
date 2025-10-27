@@ -7,7 +7,10 @@ Download
 git clone https://github.com/univr-GRAIL/Fast-and-accurate-neural-reflectance-transformation-imaging-through-knowledge-distillation.git
 
 ```
-extract and Change working directory to DiskNeuralRTI
+Change working directory
+```bash
+cd Fast-and-accurate-neural-reflectance-transformation-imaging-through-knowledge-distillation
+```
 ## Create a virtual environment:   
 ```bash
 python -m venv neuralenv  
