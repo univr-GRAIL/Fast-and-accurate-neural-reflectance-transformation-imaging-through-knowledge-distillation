@@ -4,7 +4,7 @@ This is a PyTorch implementation of Fast-and-accurate-neural-reflectance-transfo
 ## Getting Started
 Download  
 ```bash
-git clone 
+git clone https://github.com/univr-GRAIL/Fast-and-accurate-neural-reflectance-transformation-imaging-through-knowledge-distillation.git
 
 ```
 extract and Change working directory to DiskNeuralRTI
