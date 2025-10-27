@@ -10,7 +10,7 @@ git clone
 extract and Change working directory to DiskNeuralRTI
 ## Create a virtual environment:   
 ```bash
-&nbsp;&nbsp;&nbsp;&nbsp;python -m venv neuralenv  
+python -m venv neuralenv  
 ```
 ### Activate a virtual environment:  
 On Windows: 
