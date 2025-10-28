@@ -120,7 +120,7 @@ DiskNeuralRTI/
 
 If you consider our work useful for your research please consider citing:
 
-```bibtex
+```bash
 
 ```
 ## License
