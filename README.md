@@ -39,7 +39,7 @@ Set the paths and options:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output_path = "output/"          &nbsp;    # Directory for saving outputs  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mask = True or False  &nbsp; # Enable/disable masking
 
-**To Test training and testing** download a test dataset from [here](https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EkVPviXq86VGjixc6Ti18SoBdkKTOeaWqBlQzV09rpdHfg?e=cY54V6) and place inside modules folder.
+**To Test training and testing** download a dataset from [here](https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EkVPviXq86VGjixc6Ti18SoBdkKTOeaWqBlQzV09rpdHfg?e=cY54V6) and place inside modules folder.
 ### 2.  Run Training  
    Execute:  
    ```bash
@@ -79,7 +79,7 @@ Generates images relighted from 20 light directions defined in test_dataset/test
 
 ## Datasets:
 
-All the images(training, test, relighted using different algorithms) can be found at 
+All the images(training, test, and relighted using different algorithms) can be found at 
 [DiskNeuralRTI Datasets](https://univr-my.sharepoint.com/my?id=%2Fpersonal%2Ftinsaegebrechristos%5Fdulecha%5Funivr%5Fit%2FDocuments%2Fdatasets&viewid=23a4d494%2D5c4d%2D4800%2D8a0f%2D56d3734699cd)
 
 
