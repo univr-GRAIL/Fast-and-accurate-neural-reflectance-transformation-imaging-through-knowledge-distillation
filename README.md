@@ -82,14 +82,15 @@ Generates images relighted from 20 light directions defined in test_dataset/test
 ## Datasets:
 
 All the images(training, test, and relighted using different algorithms) can be found at 
-[DiskNeuralRTI Datasets](https://univr-my.sharepoint.com/my?id=%2Fpersonal%2Ftinsaegebrechristos%5Fdulecha%5Funivr%5Fit%2FDocuments%2Fdatasets&viewid=23a4d494%2D5c4d%2D4800%2D8a0f%2D56d3734699cd)
-
+<a href="[https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EkVPviXq86VGjixc6Ti18SoBdkKTOeaWqBlQzV09rpdHfg?e=cY54V6](https://univr-my.sharepoint.com/my?id=%2Fpersonal%2Ftinsaegebrechristos%5Fdulecha%5Funivr%5Fit%2FDocuments%2Fdatasets&viewid=23a4d494%2D5c4d%2D4800%2D8a0f%2D56d3734699cd)" text-decoration="none" target="_blank"> DiskNeuralRTI Datasets </a>.
 
 ##  Evaluation / Metrics
 For example, To reproduce Table 6 from the paper (Average LPIPS / ΔE for RealRTI relighting):
 
 ### 1. modify calculate_metrics.py
- Download RealRTI dataset from [here](https://univr-my.sharepoint.com/my?id=%2Fpersonal%2Ftinsaegebrechristos%5Fdulecha%5Funivr%5Fit%2FDocuments%2Fdatasets&viewid=23a4d494%2D5c4d%2D4800%2D8a0f%2D56d3734699cd)  
+ Download RealRTI dataset from 
+ <a href="https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EkVPviXq86VGjixc6Ti18SoBdkKTOeaWqBlQzV09rpdHfg?e=cY54V6" target="_blank"> here </a>.  
+ 
  set parent_folder = ['RealRTI dataset folder']
  
 ### 2. Run
