@@ -89,7 +89,7 @@ For example, To reproduce Table 6 from the paper (Average LPIPS / ΔE for RealRT
 
 ### 1. modify calculate_metrics.py
  Download RealRTI dataset from 
- <a href="https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EjRfAl2DeppAsDLDo5rkr0gBg1-54GrN3WYzLIKQRu2yPg" target="_blank"> here </a>.  
+ <a href="https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EjRfAl2DeppAsDLDo5rkr0gBg1-54GrN3WYzLIKQRu2yPg?e=fbv2tp" target="_blank"> here </a>.  
  
  set parent_folder = ['RealRTI dataset folder']
  
