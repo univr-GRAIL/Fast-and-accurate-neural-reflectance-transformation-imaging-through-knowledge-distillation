@@ -39,7 +39,7 @@ Set the paths and options:
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output_path = "output/"          &nbsp;    # Directory for saving outputs  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mask = True or False  &nbsp; # Enable/disable masking
 
-**To Test training and testing** download a dataset from <a href="https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EkVPviXq86VGjixc6Ti18SoBdkKTOeaWqBlQzV09rpdHfg?e=cY54V6" target="_blank">**here** </a> and place inside modules folder.
+**To Test training and testing** download a dataset from <a href="https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EkVPviXq86VGjixc6Ti18SoBdkKTOeaWqBlQzV09rpdHfg?e=cY54V6" text-decoration="none" target="_blank">**here** </a> and place inside modules folder.
 
 
 ### 2.  Run Training  
