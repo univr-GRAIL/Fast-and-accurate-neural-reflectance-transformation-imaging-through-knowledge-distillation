@@ -31,8 +31,6 @@ def main():
 
     parser.add_argument("--data_path", type=str, default="dataset/data",
                         help="Path to the input data folder.")
-    parser.add_argument("--ld_file", type=str, default="dataset/dirs.lp",
-                        help="Path to the light direction file.")
     parser.add_argument("--mask", action="store_true",
                         help="Use mask during training (default: False).", default=False)
     parser.add_argument("--src_img_type", type=str, default="jpg",
@@ -54,8 +52,7 @@ def main():
     os.makedirs(student_spath, mode=0o777, exist_ok=True)
 
     # Initialize dataset
-    mlic = MLIC(data_path=args.data_path, ld_file=args.ld_file,
-                src_img_type=args.src_img_type, mask=args.mask)
+    mlic = MLIC(data_path=args.data_path, src_img_type=args.src_img_type, mask=args.mask)
 
     h, w = mlic.h, mlic.w
     unmasked_features = np.zeros((h * w, 9))

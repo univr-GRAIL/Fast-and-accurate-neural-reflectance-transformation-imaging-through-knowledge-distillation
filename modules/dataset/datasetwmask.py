@@ -5,9 +5,9 @@ import pandas as pd
 
 
 class MLIC():
-    def __init__(self, data_path, ld_file, light_dimension=2, src_img_type='jpg', mask=None, test=False):
+    def __init__(self, data_path, light_dimension=2, src_img_type='jpg', mask=None, test=False):
 
-        self.ld_file = ld_file  # .lp file name containing light directions
+        self.ld_file = data_path + '/dirs.lp'  # .lp file name containing light directions
         self.data_path = data_path  # path to data (where light directions and images are)
         self.mask = mask
         self.binary_mask = None
