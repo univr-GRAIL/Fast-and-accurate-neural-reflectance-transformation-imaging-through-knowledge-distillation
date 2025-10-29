@@ -18,11 +18,11 @@ python -m venv neuralenv
 ### Activate a virtual environment:  
 On Windows: 
 ```bash
-   neuralenv\Scripts\activate  
+neuralenv\Scripts\activate  
 ```
 On Linux/macOS:  
 ```bash
-   source neuralenv/bin/activate  
+source neuralenv/bin/activate  
 ```
 ## Install Dependencies:   
 Make sure you're in a Python environment, neuralenv
@@ -45,7 +45,7 @@ Set the paths and options:
 ### 2.  Run Training  
    Execute:  
    ```bash
-     python train.py
+   python train.py
    ```  
 After training, the output/ directory will contain:
 - The trained model (.pth) 
