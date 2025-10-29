@@ -17,8 +17,10 @@ class LitAutoEncoder_student(L.LightningModule):
         self.teacher_decoder = teacher_model
         self.alpha = alpha
         self.temperature = temperature
-        self.teacher_decoder = torch.load((teacher_model + "/decoder.pth")).to('cuda')
-        self.teacher_encoder = torch.load((teacher_model + "/encoder.pth")).to('cuda')
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+        self.teacher_decoder = torch.load((teacher_model + "/decoder.pth")).to(device)    
+        self.teacher_encoder = torch.load((teacher_model + "/encoder.pth")).to(device)
         for param in self.teacher_decoder.parameters():
             param.requires_grad = False
         for param in self.teacher_encoder.parameters():
