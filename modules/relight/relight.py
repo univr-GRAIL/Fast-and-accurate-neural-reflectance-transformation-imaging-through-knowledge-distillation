@@ -19,7 +19,7 @@ def relight(model_path, gt_path, mask=False):
         mask_img = binary_mask.flatten()
         masked_indices = np.squeeze(np.column_stack(np.where(mask_img == 255)))
 
-    decoder = torch.load(model_path + '/decoder.pth', weights_only=False).to(device)
+    decoder = torch.load(model_path + '/decoder.pth').to(device)
     ld_file = gt_path + '/dirs.lp'
     light_dimension = 2
 
