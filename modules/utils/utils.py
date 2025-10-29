@@ -3,7 +3,7 @@ from torchmetrics.image import PeakSignalNoiseRatio
 import cv2
 from skimage.metrics import structural_similarity as ssim
 
-psnr_metric = PeakSignalNoiseRatio()
+psnr_metric = PeakSignalNoiseRatio(data_range=1.0)
 from PIL import Image
 import numpy as np
 import cv2 as cv
