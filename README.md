@@ -118,11 +118,18 @@ DiskNeuralRTI/
 
 ## Citation
 
-If you consider our work useful for your research please consider citing:
+If you consider our work useful for your research, please consider citing:
 
 ```bash
-Coming soon
-```
+@article{dulecha2025fastaccurateneuralreflectance,
+      title={Fast and accurate neural reflectance transformation imaging through knowledge distillation}, 
+      author={Tinsae G. Dulecha and Leonardo Righetto and Ruggero Pintus and Enrico Gobbetti and Andrea Giachetti},
+      year={2025},
+      eprint={2510.24486},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.24486}, 
+}```
 ## License
 
 This project is licensed under the MIT License with the Commons Clause.
