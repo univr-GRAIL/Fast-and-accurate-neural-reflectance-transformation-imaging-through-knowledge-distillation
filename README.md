@@ -44,7 +44,7 @@ pip install -r requirements.txt
 ### 2.  Run Training  
    Execute:  
    ```bash
-python train.py --data_path data_path --ld_file ld_file --src_img_type src_img_type --output_path output_path
+python train.py --data_path data_path --src_img_type src_img_type --output_path output_path
    ```  
 After training, the outputs will be saved inside the output-path directory, within the Teacher and Student subdirectories. Each subdirectory contains:
 - The trained model (.pth) 
