@@ -56,7 +56,7 @@ After training, the outputs will be saved inside the output-path directory, with
 Modify the following variables:  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model_path # Path to the trained model directory  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; light_path   # Path to the test light direction and mask path, if needed  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--masked # Use mask during relighting or not, default=False
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;masked # Use mask during relighting or not, default=False
 
 ### 2. Run:  
 ```bash
