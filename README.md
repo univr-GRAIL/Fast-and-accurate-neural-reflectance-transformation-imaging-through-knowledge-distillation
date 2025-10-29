@@ -129,7 +129,8 @@ If you consider our work useful for your research, please consider citing:
       archivePrefix={arXiv},
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2510.24486}, 
-}```
+}
+```
 ## License
 
 This project is licensed under the MIT License with the Commons Clause.
