@@ -6,7 +6,7 @@ import json
 
 
 def save_web_format(decoder_fpath, coeff_fpath, h, w, comp_coeff, json_dir, samples):
-    decoder_path = torch.load(decoder_fpath, map_location='cuda:0')
+    decoder_path = torch.load(decoder_fpath)
     features = np.load(coeff_fpath)
 
     w_list, b_list = save_model_json(decoder_path)
