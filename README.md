@@ -86,16 +86,15 @@ All the images(training, test, and relighted using different algorithms) can be 
 ##  Evaluation / Metrics
 For example, To reproduce Table 6 from the paper (Average LPIPS / ΔE for RealRTI relighting):
 
-### 1. modify calculate_metrics.py
+### 1. Set a parameter
  Download RealRTI dataset from 
  <a href="https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EjRfAl2DeppAsDLDo5rkr0gBg1-54GrN3WYzLIKQRu2yPg?e=fbv2tp" target="_blank"> here </a>.  
  
- set parent_folder = ['RealRTI dataset folder']
+ set parent_folder = ['RealRTI dataset folder'] # path to the parent folder containing subfolders(default: ./datasets/RealRTI) 
  
 ### 2. Run
 ``` bash
-cd modules\utils
-python calculate_metrics.py
+python python calculate_metrics.py --parent_folder parent_folder
 ```
 ## 📁 Project Structure
 
