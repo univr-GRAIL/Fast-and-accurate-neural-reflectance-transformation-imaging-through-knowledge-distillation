@@ -103,8 +103,8 @@ python python calculate_metrics.py --parent_folder parent_folder
 DiskNeuralRTI/
 │
 ├── requirements.txt  
-├── Calculate_metrics.py test.py 
-├── test.py    train.py   
+├── Calculate_metrics.py 
+├── test.py  
 ├── train.py  
 ├── README.md             # Project dependencies
 ├── modules/                 
