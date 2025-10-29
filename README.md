@@ -29,6 +29,7 @@ Make sure you're in a Python environment, neuralenv
 Install the dependencies using the following command:    
 ```bash    
 pip install -r requirements.txt  
+pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https://download.pytorch.org/whl/cu124
 ```
 ## Training
 ###  1. Configure the training parameters
