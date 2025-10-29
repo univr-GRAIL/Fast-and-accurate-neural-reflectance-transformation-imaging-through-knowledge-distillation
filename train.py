@@ -31,11 +31,11 @@ def main():
 
     parser.add_argument("--data_path", type=str, default="dataset/data",
                         help="Path to the input data folder.")
-    parser.add_argument("--ld_file", type=str, default="dataset/light_dirs.txt",
+    parser.add_argument("--ld_file", type=str, default="dataset/dirs.lp",
                         help="Path to the light direction file.")
     parser.add_argument("--mask", action="store_true",
                         help="Use mask during training (default: False).", default=False)
-    parser.add_argument("--src_img_type", type=str, default="png",
+    parser.add_argument("--src_img_type", type=str, default="jpg",
                         help="Source image type (e.g. png, jpg).")
     parser.add_argument("--output_path", type=str, default="outputs",
                         help="Directory to save Teacher and Student models.")
