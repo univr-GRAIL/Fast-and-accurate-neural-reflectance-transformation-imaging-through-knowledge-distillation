@@ -32,12 +32,11 @@ pip install -r requirements.txt
 ```
 ## Training
 ###  1. Configure the training parameters
-   Edit the file:  
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; utils/params.py
-Set the paths and options:  
+   set the following variables:   
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; data_path   = "your_dataset_path/"  &nbsp; # Path to your training dataset  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; output_path = "output/"          &nbsp;    # Directory for saving outputs  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mask = True or False  &nbsp; # Enable/disable masking
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; mask = True or False  &nbsp; # Enable/disable masking  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; src_img_type  # Image extension type, i.e., jpg [default], png, or tiff.
 
 **To Test training and testing** download a dataset from <a href="https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/EkVPviXq86VGjixc6Ti18SoBdkKTOeaWqBlQzV09rpdHfg?e=cY54V6" text-decoration="none" target="_blank">**here** </a> and place inside modules folder.
 
@@ -45,35 +44,35 @@ Set the paths and options:
 ### 2.  Run Training  
    Execute:  
    ```bash
-   python train.py
+python train.py --data_path data_path --ld_file ld_file --src_img_type src_img_type --output_path output_path
    ```  
-After training, the output/ directory will contain:
+After training, the outputs will be saved inside the output-path directory, within the Teacher and Student subdirectories. Each subdirectory contains:
 - The trained model (.pth) 
-- Compressed coefficients (teacher & student)
+- Compressed coefficients
 - Image planes and a JSON file for OpenLIME visualization
 
-If the codes run correctly, you will find the output file in the [output-path] folder  
-
 ## Test/Relighting  
-### 1. **Edit** test.py   
+### 1. Configure test parameters   
 Modify the following variables:  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model_path = "output_path/model_name.pth" # Trained model path  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test_data = "test_data_path"  # Folder containing test light direction, mask (if necessary), and ground truth image
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;model_path # Path to the trained model directory  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; light_path   # Path to the test light direction and mask path, if needed  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;--masked # Use mask during relighting or not, default=False
 
 ### 2. Run:  
 ```bash
- python test.py  
+python test.py  --model_path model_path  --light_path light_path
 ```  
 
 For example, if you set: 
 ```bash 
-test_data = 'test_dataset/test_fig6'
+model_path=test_dataset/outputs/Student 
+light_path = test_dataset/test_fig6 and
 ```
 This will generate images shown in figure 6 on the paper and saves it in the relighted folder. 
 
 but if you set:
 ```bash 
-test_data = 'test_dataset/test'
+light_path = 'test_dataset/test'
 ``` 
 Generates images relighted from 20 light directions defined in test_dataset/test/dirs.lp
 
@@ -103,19 +102,18 @@ python calculate_metrics.py
 ```bash
 DiskNeuralRTI/
 │
-├── requirements.txt              # Project dependencies
-│
-└── modules/                 
+├── requirements.txt  
+├── Calculate_metrics.py test.py 
+├── test.py    train.py   
+├── train.py  
+├── README.md             # Project dependencies
+├── modules/                 
     ├── dataset/                   
     ├── model/
     ├── relight/                  
-    ├── test_dataset/  
     ├── utils/
-    │   └── params.py             # Training parameters and paths
-    ├── Calculate_metrics.py test.py 
-    ├── test.py    train.py   
-    ├── train.py               
-    └── README.md                 # Project documentation
+    │   └── params.py             # Tra         
+                   # Project documentation
 ```
 
 ## Citation
