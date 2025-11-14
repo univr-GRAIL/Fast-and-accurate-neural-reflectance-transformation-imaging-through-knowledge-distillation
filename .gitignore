@@ -1,0 +1,61 @@
+# =============================
+# 🧠 PYTHON / ML PROJECT .gitignore
+# =============================
+
+# --- Virtual Environments ---
+neuralenv/
+relighted/
+Outputs/
+External Libraries
+venv/
+.venv/
+env/
+.env/
+ENV/
+env.bak/
+venv.bak/
+modules/test_dataset/
+
+# --- Python Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Distribution / Packaging ---
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Unit test / coverage reports ---
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints
+
+# --- Datasets, Logs, and Outputs ---
+data/
+datasets/
+logs/
+output
