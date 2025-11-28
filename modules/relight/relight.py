@@ -4,7 +4,10 @@ import numpy as np
 import torch
 def relight(model_path, ld_file, mask_path=None):
     input_feature_path = model_path + '/coefficient.npy'
-    est_path = 'relighted'
+    # est_path = model_path + '/relighted'
+    est_path = os.path.dirname(model_path) + '/Disk-NeuralRTI2'
+
+
     if not os.path.exists(est_path):
         os.makedirs(est_path)
 
