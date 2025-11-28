@@ -74,7 +74,7 @@ python train.py --data_path <path_to_dataset> --src_img_type <jpg|png> --mask <T
 | ---------------- | --------------------------------------------- |
 | `--data_path`    | Path to your training dataset                 |
 | `--src_img_type` | Image format (default: `jpg`; supports `png`) |
-| `--mask`         | Enable or disable masking (`True` or `False`). If masking is enabled put mask.png file inside data_path folder. |
+| `--mask`         | Enable or disable masking (`True` or `False`) |
 
 **Outputs**  
 Training results will be saved in an outputs/ directory containing:
@@ -116,11 +116,30 @@ python test.py --model_path test_files/model_files --light_path test_files/test_
 python test.py --model_path test_files/model_files --light_path test_files/test_dirs.lp
 ```
 
-The generated relighted images will be saved in a `relighted/` folder.
+The generated relighted images will be saved in a `[model_path]/Disk-NeuralRTI2/` folder.
 
-👉 This output is also: [Available here](https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/IgBQ2HC32WNZRYNcDlFqcJo9Aaj7m9vzgRE1fayoK48t3DE?e=6Mu0Ei)
+👉 This output is also: [Available here](https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/IgBQ2HC32WNZRYNcDlFqcJo9Aaj7m9vzgRE1fayoK48t3DE?e=6Mu0Ei)  
 
-**Note:** The `test.py` script automatically detects CUDA availability and runs on GPU if available, otherwise it uses CPU. No additional configuration is required.
+## Testing the performance on the whole RealRTI dataset
+To test the performacne on complete RealRTI datasets down trained model file from [here](https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/IgALr3s94uXrTpP5CTBb_hQsAROZ23hv2s2opUNvmfhgxxM?e=HiV9rn)  
+### Run
+
+```bash
+python run_all.py --parent_folder <path_to_RealRTI>
+```
+
+**Argument:**
+
+| Argument          | Description                               |
+| ----------------- | ----------------------------------------- |
+| `--parent_folder` | Path to the folder that contains the RealRTI items trained model file. |
+
+Running this script produces the evaluation results reported in Table 6 — Column 6 of the paper.
+
+
+
+### Note:   
+ **The `test.py` script automatically detects CUDA availability and runs on GPU if available, otherwise it uses CPU. No additional configuration is required.**
 
 ---
 
