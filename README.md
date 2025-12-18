@@ -11,7 +11,7 @@ Reflectance Transformation Imaging (RTI) is very popular for its ability to visu
 
 **📄 Paper DOI:** [https://doi.org/10.1016/j.cag.2025.104475](https://doi.org/10.1016/j.cag.2025.104475)
 
-This repository provides a **PyTorch implementation**
+This repository provides a **PyTorch implementation** of
 **Fast and Accurate Neural Reflectance Transformation Imaging through Knowledge Distillation** published in _Computers & Graphics, Elsevier (2025)_.
 
 ---
