@@ -62,7 +62,7 @@ pip install torch==2.4.1 torchvision==0.19.1 torchaudio==2.4.1 --index-url https
 
 ## Training
 
-To Train train the model, run:
+To train the model, run:
 
 ```bash
 python train.py --data_path <path_to_dataset> --src_img_type <jpg|png> --mask <True|False>
@@ -121,7 +121,7 @@ The generated relighted images will be saved in a `[model_path]/Disk-NeuralRTI2/
 👉 This output is also: [Available here](https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/IgBQ2HC32WNZRYNcDlFqcJo9Aaj7m9vzgRE1fayoK48t3DE?e=6Mu0Ei)  
 
 ## Testing the performance on the whole RealRTI dataset
-To test the performacne on complete RealRTI datasets down trained model file from [here](https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/IgALr3s94uXrTpP5CTBb_hQsAROZ23hv2s2opUNvmfhgxxM?e=HiV9rn)  
+To test the performance on complete RealRTI datasets download trained model file from [here](https://univr-my.sharepoint.com/:f:/g/personal/tinsaegebrechristos_dulecha_univr_it/IgALr3s94uXrTpP5CTBb_hQsAROZ23hv2s2opUNvmfhgxxM?e=HiV9rn)  
 ### Run
 
 ```bash
