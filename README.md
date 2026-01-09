@@ -34,7 +34,7 @@ cd Fast-and-accurate-neural-reflectance-transformation-imaging-through-knowledge
 ## Create a virtual environment:
 
 ```bash
-python -m venv neuralenv
+python3.11 -m venv neuralenv
 ```
 
 ### Activate a virtual environment:
@@ -50,6 +50,10 @@ On Linux/macOS:
 ```bash
 source neuralenv/bin/activate
 ```
+## Python Version
+
+This project was developed and tested with **Python 3.11.9**.  
+Using a different Python version may lead to compatibility issues with PyTorch or PyTorch Lightning.
 
 ## Install Dependencies:
 
